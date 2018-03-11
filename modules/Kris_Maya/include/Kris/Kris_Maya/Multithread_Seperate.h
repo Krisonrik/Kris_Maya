@@ -4,7 +4,6 @@
 #define MODULES_KRIS_MAYA_INCLUDE_KRIS_KRIS_MAYA_MULTITHREAD_SEPERATE_H_
 
 WINDOWS_DISABLE_ALL_WARNING
-// #include "opencv2/opencv.hpp"
 #include "maya/MIOStream.h"
 #include "maya/MPxCommand.h"
 
@@ -20,7 +19,7 @@ class Multithread_Seperate : public MPxCommand
 
   static void *creator();
 
-  MStatus doIt(const MArgList &) override;
+  MStatus doIt(const MArgList &args) override;
 };
 
 }  // namespace kris
